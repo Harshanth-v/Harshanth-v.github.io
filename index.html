@@ -863,6 +863,7 @@
       display: grid;
       grid-template-columns: minmax(0, 1.2fr) minmax(0, 1.1fr);
       gap: 18px;
+      margin-top: 12px;
     }
 
     @media (max-width: 800px) {
@@ -1049,6 +1050,14 @@
       }
     }
   </style>
+
+  <!-- EmailJS (with your real keys) -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("0QGF36U18uSXkjKlK");
+    })();
+  </script>
 </head>
 
 <body>
@@ -1111,11 +1120,11 @@
 
             <h2 class="hero-title">
               Turning <span class="highlight">data</span> into clear, actionable
-              <span class="highlight">insights & solutions.</span>
+              <span class="highlight">insights &amp; solutions.</span>
             </h2>
 
             <p class="hero-sub">
-              I'm <strong>Harshanth V</strong>, a Python & SQL-focused developer with a passion for
+              I'm <strong>Harshanth V</strong>, a Python &amp; SQL-focused developer with a passion for
               data analysis, machine learning fundamentals, and clean, reliable code.
             </p>
 
@@ -1130,7 +1139,7 @@
               <span class="chip">Pandas · NumPy</span>
               <span class="chip">Matplotlib · Seaborn</span>
               <span class="chip">Data Cleaning</span>
-              <span class="chip">Git & GitHub</span>
+              <span class="chip">Git &amp; GitHub</span>
             </div>
 
             <div class="hero-actions">
@@ -1166,7 +1175,7 @@
           <div class="hero-profile">
             <span class="profile-tag">
               <span class="pill-dot"></span>
-              Available for internships & full-time roles
+              Available for internships &amp; full-time roles
             </span>
             <div class="profile-main">
               <div class="profile-name">Harshanth&nbsp;V</div>
@@ -1406,7 +1415,7 @@
         </div>
       </section>
 
-      <!-- EDUCATION & CERTS -->
+      <!-- EDUCATION & CERTIFICATIONS -->
       <section class="section">
         <div class="card fade-in-up">
           <div class="card-inner">
@@ -1433,4 +1442,177 @@
         <div class="card fade-in-up delay-1">
           <div class="card-inner">
             <div class="section-label">Certifications</div>
-            <h3 cl
+            <h3 class="section-title">Courses &amp; certifications.</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-header">
+                  <div>
+                    <div class="timeline-role">Python / Data Science Certifications</div>
+                    <div class="timeline-company">Online learning platforms</div>
+                  </div>
+                  <div class="timeline-meta">Ongoing</div>
+                </div>
+                <ul class="timeline-list">
+                  <li>Strengthening Python, data analysis, and SQL fundamentals through guided courses.</li>
+                  <li>Applying concepts in hands-on projects and internship work.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT (ADVANCED) -->
+      <section class="section" id="contact">
+        <div class="card fade-in-up">
+          <div class="card-inner">
+            <div class="section-label">Contact</div>
+            <h3 class="section-title">Let’s connect.</h3>
+            <p class="section-desc">
+              Whether you want to collaborate, hire, or just say hi — I’m always open to meaningful conversations.
+            </p>
+
+            <div class="contact-grid">
+              <!-- LEFT SIDE CONTACT DETAILS -->
+              <div class="contact-list">
+                <div class="contact-item">
+                  <div class="contact-icon">📞</div>
+                  <span>
+                    <strong>
+                      <a href="tel:8088953725" style="color:var(--text-primary)">8088953725</a>
+                    </strong>
+                  </span>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-icon">✉</div>
+                  <span>
+                    <strong>
+                      <a href="mailto:balajiharshanth1234@gmail.com" style="color:var(--text-primary)">
+                        balajiharshanth1234@gmail.com
+                      </a>
+                    </strong>
+                  </span>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-icon">💼</div>
+                  <a href="https://www.linkedin.com" target="_blank" style="color:#93c5fd">
+                    LinkedIn Profile
+                  </a>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-icon">🐙</div>
+                  <a href="https://github.com/Harshanth-v" target="_blank" style="color:#93c5fd">
+                    github.com/Harshanth-v
+                  </a>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-icon">💬</div>
+                  <a href="https://wa.me/918088953725" target="_blank" style="color:#22c55e">
+                    WhatsApp Me
+                  </a>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-icon">📍</div>
+                  <span>Bangalore, India</span>
+                </div>
+
+                <iframe
+                  src="https://www.google.com/maps?q=Bangalore&output=embed"
+                  width="100%"
+                  height="180"
+                  style="border:0;border-radius:10px;margin-top:10px;"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+              </div>
+
+              <!-- RIGHT SIDE FORM -->
+              <form class="contact-form" onsubmit="sendEmail(event)">
+                <div class="field">
+                  <label>Your Name</label>
+                  <input type="text" name="from_name" placeholder="Enter your name" required />
+                </div>
+
+                <div class="field">
+                  <label>Your Email</label>
+                  <input type="email" name="reply_to" placeholder="Enter your email" required />
+                </div>
+
+                <div class="field">
+                  <label>Your Message</label>
+                  <textarea name="message" placeholder="Write your message..." required></textarea>
+                </div>
+
+                <button class="btn-submit" type="submit">Send Message</button>
+                <p class="contact-note">I usually reply within 24 hours.</p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>© <span id="year"></span> Harshanth V. All rights reserved.</span>
+      <div class="footer-links">
+        <a href="#top">Back to top</a>
+        <a href="mailto:balajiharshanth1234@gmail.com">Email</a>
+        <a href="https://github.com/Harshanth-v" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Scroll to top button -->
+  <button class="scroll-top" onclick="document.getElementById('top').scrollIntoView({behavior: 'smooth'})">
+    ↑
+  </button>
+
+  <!-- Basic JS (menu, theme, contact) -->
+  <script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const navMobile = document.getElementById("nav-mobile");
+    const themeToggle = document.getElementById("theme-toggle");
+
+    function closeMobileNav() {
+      navMobile.classList.remove("open");
+    }
+
+    if (menuToggle) {
+      menuToggle.addEventListener("click", () => {
+        navMobile.classList.toggle("open");
+      });
+    }
+
+    if (themeToggle) {
+      themeToggle.addEventListener("click", () => {
+        document.body.classList.toggle("light-theme");
+      });
+    }
+
+    // Year in footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // EmailJS send
+    function sendEmail(event) {
+      event.preventDefault();
+
+      const serviceID = "service_cc8w6jb";
+      const templateID = "template_sufa7ps";
+
+      emailjs.sendForm(serviceID, templateID, event.target)
+        .then(function () {
+          alert("Message sent successfully!");
+          event.target.reset();
+        }, function (error) {
+          console.error("EmailJS error:", error);
+          alert("Failed to send message. Please try again.");
+        });
+    }
+  </script>
+</body>
+</html>
